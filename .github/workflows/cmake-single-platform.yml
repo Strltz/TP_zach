@@ -15,9 +15,9 @@ jobs:
       run: |
         sudo apt install -y libgtest-dev
         cmake -H. -B_build
-        cmake --build _build
+        cmake --build build
 
     - name: Tests
       run: |
-        _build/check
+        build/check
         
