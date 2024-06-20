@@ -5,5 +5,5 @@ public:
     static A* getInstance();
 private:
     A();
-    A* instance;
+    static A* instance;
 };
