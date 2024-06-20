@@ -1,4 +1,4 @@
-name: for_single_platform
+name: CMake on a single platform
 
 on:
   push:
@@ -13,11 +13,15 @@ jobs:
 
     - name: Build
       run: |
-        sudo apt install -y libgtest-dev
-        cmake -H. -B build
-        cmake --build build
+        mkdir third-party
+        mkdir artifacts
+        git submodule add https://github.com/google/googletest third-party/gtest
+        cd third-party/gtest && git checkout release-1.11.0 && cd ../..
+        cmake -H. -B_build -DBUILD_TESTS=ON
+        cmake --build _build
+        mv _build/result artifacts
 
     - name: Tests
       run: |
-        build/check
+        _build/check
         
