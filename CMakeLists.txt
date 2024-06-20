@@ -9,7 +9,7 @@ add_executable(main main.cpp class.cpp)
 ##target_link_libraries(class)
 
 enable_testing()
-add_subdirectory(third-party/gtest)
+add_subdirectory(gtest)
 file(GLOB tests "tests/*.cpp")
 foreach(test ${tests})
      add_executable(check ${test})
