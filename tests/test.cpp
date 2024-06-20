@@ -1,4 +1,4 @@
-#include <class.h>
+#include "class.h"
 #include <gtets/gtest.h>
 #include <gmock/gmock.h>
 
