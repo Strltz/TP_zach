@@ -1,3 +1,4 @@
+#include <iostream>
 #include "class.h"
 
 static A* A::getInstatnce() {
