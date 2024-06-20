@@ -17,7 +17,7 @@ jobs:
         git submodule add https://github.com/google/googletest third-party/gmock
         cd third-party/gtest && git checkout release-1.11.0 && cd ../..
         cmake -H. -B_build
-        cmake --build _build
+        cmake --build build
 
     - name: Tests
       run: |
