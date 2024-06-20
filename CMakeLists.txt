@@ -7,3 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(main main.cpp class.cpp)
 # target_link_libraries(class)
+foreach(test ${tests})
+     add_executable(check ${test})
+     add_test(NAME check COMMAND check)
+endforeach(test ${tests})
