@@ -4,7 +4,7 @@ A* A::getInstance() {
     std::cout << "get A " << std::endl;
     if (instance) {
         instance = new A;
-        rerurn instance;
+        return instance;
     }
 }
 A::A() {
