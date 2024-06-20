@@ -1,4 +1,4 @@
-#include <class.cpp>
+#include "class.h"
 
 A* A::instance = nullptr;
 int main() {
