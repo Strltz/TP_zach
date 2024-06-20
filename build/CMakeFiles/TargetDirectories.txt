@@ -1,0 +1,3 @@
+/home/kw1nt00/Рабочий стол/BMSTU_learn/TMP/TP_zach/build/CMakeFiles/main.dir
+/home/kw1nt00/Рабочий стол/BMSTU_learn/TMP/TP_zach/build/CMakeFiles/edit_cache.dir
+/home/kw1nt00/Рабочий стол/BMSTU_learn/TMP/TP_zach/build/CMakeFiles/rebuild_cache.dir
