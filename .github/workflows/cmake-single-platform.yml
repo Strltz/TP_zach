@@ -9,10 +9,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
-    - name: Build 
+    - name: Build
       run: |
-        cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install
+        mkdir third-party
+        git submodule add https://github.com/google/googletest third-party/gmock
+        cd third-party/gtest && git checkout release-1.11.0 && cd ../..
+        cmake -H. -B_build
         cmake --build _build
+
+    - name: Tests
+      run: |
+        _build/check
         
