@@ -11,7 +11,7 @@ enable_testing()
 file(GLOB tests "tests/*.cpp")
 foreach(test ${tests})
      target_include_directories(class.h)
-     add_executable(check ${test})
+     include_directories(.)
      add_test(NAME check COMMAND check)
 endforeach(test ${tests})
 
