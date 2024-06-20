@@ -1,6 +1,6 @@
 #include "class.h"
 
-A* A::getInstatnce() {
+A* A::getInstance() {
     std::cout << "get A " << std::endl;
     if (instance) {
         instance = new A;
