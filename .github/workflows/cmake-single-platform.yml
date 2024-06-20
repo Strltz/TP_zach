@@ -15,7 +15,7 @@ jobs:
       run: |
         mkdir third-party
         git submodule add https://github.com/google/googletest third-party/gmock
-        cd third-party/gtest && git checkout release-1.11.0 && cd ../..
+        cd third-party/gtest && git submodule update --init --recursive && git checkout release-1.11.0 && cd ../..
         cmake -H. -B_build
         cmake --build build
 
