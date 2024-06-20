@@ -19,5 +19,5 @@ jobs:
 
     - name: Tests
       run: |
-        _build/main
+        _build/check
         
