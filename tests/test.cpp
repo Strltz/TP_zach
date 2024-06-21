@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
-#include <main.cpp>
+#include "main.cpp"
 
 TEST (tests, test_1) {
 int a = 1;
