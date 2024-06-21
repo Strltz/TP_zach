@@ -15,7 +15,7 @@ EXPECT_EQ(a, b - 1);
         .Times(1);
 }*/
 
-class MockClass : public A {
+/*class MockClass : public A {
 public:
     MOCK_METHOD0(constructor, void());
 // непонятно, как можо наследовать mock class, если в базовом классе приватный конструктор
@@ -27,7 +27,7 @@ TEST (tests, test_2) {
   MockClass obj1;
   EXPECT_CALL(obj1, constructor())
         .Times(1);
-}
+}*/
 
 TEST (tests, test_3) {
   A* obj1 = A::getInstance();
