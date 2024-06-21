@@ -22,7 +22,7 @@ public:
 
 TEST (tests, test_2) {
   MockClass obj1;
-  EXPECT_CALL(obj1, A())
+  EXPECT_CALL(obj1, constructor())
         .Times(1);
 }
 
