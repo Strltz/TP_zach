@@ -1,7 +1,20 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
-#include "main.cpp"
+class A {
+public:
+    static A* getInstance() {
+        std::cout << "get A " << std::endl;
+        if (instance) {
+            return instance;
+        }
+    }
+private:
+    A() {
+        std::cout << "construct A" << std::endl;
+    }
+    static A* instance;
+};
 
 TEST (tests, test_1) {
 int a = 1;
