@@ -1,4 +1,12 @@
-#include "class.h"
+#include <iostream>
+
+class A {
+public:
+    static A* getInstance();
+private:
+    A();
+    static A* instance;
+};
 
 A* A::instance = nullptr;
 int main() {
