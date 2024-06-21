@@ -14,11 +14,19 @@ public:
     MOCK_METHOD0(for_support, void());
 };
 
+MockClass* mock = nullptr;
+
+A::A() {
+	mock->for_support();
+}
+
+A* A::instance = nullptr;
+
 TEST (tests, test_2) {
-  MockClass obj1;
-  EXPECT_CALL(obj1, for_support())
+  EXPECT_CALL(*mock, for_support())
         .Times(1);
-}*/
+  A* obj1 = A::getInstance();
+}
 
 TEST (tests, test_3) {
   A* obj1 = A::getInstance();
