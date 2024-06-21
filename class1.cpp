@@ -1,4 +1,5 @@
 #include <iostream>
+#include "class.h"
 
 class A {
 public:
