@@ -1,6 +1,8 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
+#include "../main.cpp";
+
 class A {
 public:
     static A* getInstance() {
