@@ -1,4 +1,4 @@
-#include "class1.cpp"
+#include "class1.h"
 
 int main() {
     A* pa1 = A::getInstance();
