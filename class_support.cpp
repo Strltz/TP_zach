@@ -1,7 +1,5 @@
 #include "class.h"
 
-#include "class.h"
-
 void A::for_support() {
 }
 
