@@ -1,4 +1,5 @@
 #include <iostream>
+
 class A {
 public:
     static A* getInstance() {
