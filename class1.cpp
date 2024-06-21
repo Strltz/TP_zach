@@ -1,18 +1,12 @@
 #include "class.h"
 
-class A {
-public:
-    static A* getInstance() {
-        std::cout << "get A " << std::endl;
-        if (instance) {
-            return instance;
-        }
-    }
-private:
-    A() {
-        std::cout << "construct A" << std::endl;
-    }
-    static A* instance;
-};
+void A::for_support () {
+}
 
-A* A::instance = nullptr;
+void A::for_support () {
+    std::cout << "construct A" << std::endl;
+}
+
+A::A () {
+    std::cout << "construct A" << std::endl;
+}
