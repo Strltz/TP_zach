@@ -9,12 +9,6 @@ int b = 2;
 EXPECT_EQ(a, b - 1);
 }
 
-/*TEST (tests, test_2_1) {
-  A obj1;
-  EXPECT_CALL(obj1, A())
-        .Times(1);
-}*/
-
 /*class MockClass : public A {
 public:
     MOCK_METHOD0(constructor, void());
