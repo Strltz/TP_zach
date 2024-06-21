@@ -12,5 +12,3 @@ private:
     A();
     static A* instance;
 };
-
-A* A::instance = nullptr;
