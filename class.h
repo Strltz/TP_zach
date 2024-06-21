@@ -1,4 +1,4 @@
-
+#include <iostream>
 class A {
 public:
     static A* getInstance() {
@@ -7,9 +7,7 @@ public:
             return instance;
         }
     }
-    void for_support() {
-      
-    }
+    void for_support();
 private:
     A();
     static A* instance;
