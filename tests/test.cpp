@@ -1,6 +1,8 @@
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
 
+#include <main.cpp>
+
 TEST (tests, test_1) {
 int a = 1;
 int b = 2;
